@@ -700,9 +700,5 @@ div.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
   }
-
-a.redpen:hover{
-    color: rgb(255,0,0);
-  }
   
 }
