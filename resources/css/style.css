@@ -507,6 +507,76 @@ div.container {
   -ms-transform: translate(-50%, -50%);
 }
 
+
+/* News cards */
+
+.band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+
+.news-card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.news-card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+.news-card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.news-card article {
+  padding: 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-card h2 {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 1.2rem;
+  color: #333;
+}
+
+.news-card p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.news-card span {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #999;
+  text-transform: uppercase;
+  margin: 2em 0 0 0;
+}
+
+sup {
+  font-size: 0.6rem;
+  vertical-align:super;
+}
+
 /* Desktop */
 @media only screen and (min-width: 600px) {
 
@@ -580,6 +650,12 @@ div.container {
   .thumbnails .card:hover {
     transform: translateY(-10px);
   }
+
+  /* News */
+
+  .band {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr))
+  } 
 }
 
   
@@ -628,6 +704,13 @@ div.container {
     line-height: 1.9rem;
     padding-left: 0.55rem;
     padding-right: 0.55rem;
+  }
+
+  .news-card h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0rem 0rem 1.2rem 0rem;
+    color: #333;
   }
 
   /* Header */
@@ -699,6 +782,11 @@ div.container {
   .thumbnails {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
+  }
+
+
+a.redpen:hover{
+    color: rgb(255,0,0);
   }
   
 }
