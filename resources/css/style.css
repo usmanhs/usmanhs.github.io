@@ -57,7 +57,7 @@ div.cover-title{
   color: white;
   border: 0.1rem solid white;
   position: relative;
-  top: 100px;
+  top: 150px;
   width: 400px;
   margin: 0 auto;
   padding: 12px 3px;
@@ -160,6 +160,13 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+hr2 {
+  display: flex;
+  border-top: 0.08rem solid rgb(102,102,102);
+  margin-top: 1.2rem;
+}
+
 
 #introdiv {
   margin-left: auto;
@@ -273,14 +280,28 @@ h3.titles {
 
 
 h4.titles {
+  line-height: 1.5rem;
   font-weight: bold;
-  padding-top: 0.7em;
-  padding-bottom: 1.7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   margin: auto;
 }
 
+h4.date {
+  font-style:italic;
+  padding-top: 0.7rem;
+  padding-bottom: 1.7rem;
+  margin: auto;
+  font-size:1.1rem;
 
-/* Buttons */
+}
+
+i {
+  font-style: italic;
+}
+
+
+/* Button for Index */
 
 .effect {
   text-align: center;
@@ -328,6 +349,49 @@ h4.titles {
 .effect.effect-1:hover.effect.effect-1:before {
   opacity: 1;
   text-indent: 0px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(87, 12, 77);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  border: none; 
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.button .btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button .btn:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover .btn {
+  padding-right: 25px;
+}
+
+.button:hover .btn:after {
+  opacity: 1;
+  right: 0;
 }
 
 #underlined a { color: #666;display:inline-block; margin-bottom:0;}
@@ -518,6 +582,8 @@ div.container {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
+  margin-bottom: 3rem;
+
 }
 
 
@@ -539,6 +605,11 @@ div.container {
   background-size: cover;
   background-position: center center;
 }
+
+.news-card .thumb-articles{
+  padding: 1.2rem 1.2rem 0rem 1.2rem;
+}
+
 .news-card:hover {
   top: -2px;
   box-shadow: 0 4px 5px rgba(0,0,0,0.2);
@@ -564,6 +635,11 @@ div.container {
   line-height: 1.4;
 }
 
+.news-card p2 { 
+  flex: 1;
+  line-height: 1.4;
+}
+
 .news-card span {
   font-size: 1rem;
   font-weight: lighter;
@@ -577,8 +653,54 @@ sup {
   vertical-align:super;
 }
 
+sup2 {
+  font-size: 0.9rem;
+  vertical-align:super;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.25em 0 0.8em 0;
+  padding: 0.35em 0px 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -16px;
+  top: -20px;
+  color: #7a7a7a;
+}
+  
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+   
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+
+
 /* Desktop */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 599px) {
 
   .mobile {
     display: none;
@@ -684,6 +806,7 @@ sup {
   }
 
   #banner .cover-title h1  {
+    top: 100px;
     font-size: 2.7rem;
     width: 80%;
   }
@@ -729,7 +852,7 @@ sup {
   }
 
   li {
-    margin-right: 1.05rem;
+    margin-right: 1rem;
     font-size: 1.2rem;
   }
 
@@ -789,4 +912,22 @@ a.redpen:hover{
     color: rgb(255,0,0);
   }
   
+}
+
+@media only screen and (max-width: 360px) {
+
+  li {
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 325px) {
+
+  li {
+    margin-right: 0.55rem;
+    font-size: 1.2rem;
+  }
+
 }
