@@ -435,7 +435,7 @@ i {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom:2rem;
+  margin-bottom:1.5rem;
   
 }
 
@@ -453,6 +453,9 @@ img.chem-mech {
   width: 85%;
 }
 
+img.article-mech {
+  width: 95%;
+}
 
 
 /* Sections */
