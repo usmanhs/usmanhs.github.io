@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#570c4d"/>
-        <meta name="Description" content="Overview of CH activation methodology and how it is related to my current research.">
+        <meta name="Description" content="A blog outlining my side projects and thoughts.">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./resources/css/reset.css">
         <link rel="stylesheet" href="./resources/css/style.css">
         <link rel="icon" href="./resources/images/favicon-flask-v2.ico" type="image/x-icon">
-        <title>Articles</title>
+        <title>Blog</title>
     </head>
 
     <body>
@@ -23,10 +23,10 @@
             </div>
             <nav class="desktop" id="underlined">
                 <ul>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Research</a></li>
                     <li><a href="resources.html">Resources</a></li>
-                    <li><a href="articles.html" style="color:rgb(201, 30, 178)">Articles</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html" style="color:rgb(201, 30, 178)">Blog</a></li>                    
                     <li><a href="news.html">News</a></li>   
                     <li><a href="contact.html">Contact</a></li> 
                 </ul>   
@@ -37,10 +37,10 @@
             </div>
             <nav class="mobile">
                 <ul>
+                    <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
                     <li><a href="research.html"><i class="fa fa-flask" aria-hidden="true"></i></a></li>
                     <li><a href="resources.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                    <li><a href="articles.html" style="color:rgb(201, 30, 178)"><i class="fa fa-book" aria-hidden="true"></i></a></li>
-                    <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="blog.html" style="color:rgb(201, 30, 178)"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
                     <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
                     <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                 </ul>
@@ -51,28 +51,39 @@
             <!--Cover-->
             <div class="cover" id="banner">
                 <div class="cover-title">
-                    <h1>Journal club</h1>
+                    <h1>My blog</h1>
                 </div>
             </div>
             
             <!--Intro-->
             <div class="intro-title">
-                <h2>Reviewing literature</h2>
+                <h2><a name="topline">Thoughts and Discussions</a></h2>
             </div>
             <hr style="width: 4.5rem">
 
             <section id="intro-about">
                 <div id="aboutdiv">
-                    <div class="band">
+                    <div class="band-blog">
  
                         <!-- grid item, containing a card -->
 
                         <div class="item-1">
+                            <div class="news-card" style="min-height: initial" >
+                                <a href="#first-python"><div class="thumb" style="background-image: url(./resources/images/blog/python-numbers.jpg);"></div></a>
+                                    <article>
+                                        <h2>Data Analysis with Python</h2>
+                                        <p2>I put my Python coding skills to use by performing data analysis and visualisation of my finacial transactions from the past year. </p2>
+                                        <a href="#first-python"><button class="button" style="vertical-align:middle"><div id="" class="btn">Read More </div></button></a>
+                                    </article>
+                            </div>
+                        </div>
+
+                        <div class="item-1">
                             <div class="news-card" style="min-height: initial;" >
-                                <div class="thumb" style="background-image: url(./resources/images/articles/HTS.jpg);"></div>
+                                <a href="#hts"><div class="thumb" style="background-image: url(./resources/images/blog/HTS.jpg);"></div></a>
                                     <article>
                                         <h2>Utilisation of HTE in industry</h2>
-                                        <p2>High-Throughput Experimentation (HTE) is a very useful tool to obtain chemical reaction data quickly and continues to be successfully utilised in the pharmaceutical industry.</p2>
+                                        <p2>I discuss a paper which highlights examples of using High-Throughput Experimentation (HTE) in the pharmaceutical industry.</p2>
                                         <a href="#hts"><button class="button" style="vertical-align:middle"><div id="" class="btn">Read More </div></button></a>
                                     </article>
                             </div>
@@ -80,10 +91,10 @@
 
                         <div class="item-1">
                             <div class="news-card" style="min-height: initial;">
-                                <div class="thumb-articles"><img src="./resources/images/articles/tert-amine-v2.svg"><hr2></div>
+                                <a href="#tertamine"><div class="thumb-articles"><img src="./resources/images/blog/tert-amine-v2.svg"><hr2></div></a>
                                     <article>
                                         <h2>C–H arylation using amines</h2>
-                                        <p>By using a native functional group already present in a molecule, in this case a tertiary alkylamine, C–H functionalisation is achieved with little synthetic manipulation.  </p>
+                                        <p>I outline the results of the research done by the Gaunt Group where a tertiary alkylamine is utilised for C–H functionalisation.</p>
                                         <a href="#tertamine"><button class="button" style="vertical-align:middle"><div id="" class="btn">Read More </div></button></a>
                                     </article>
                             </div>
@@ -91,10 +102,10 @@
 
                         <div class="item-1">
                             <div class="news-card"style="min-height: initial;">
-                                <div class="thumb-articles"><img src="./resources/images/articles/imine-linkage-v3.svg"><hr2></div>  
+                                <a href="#imine"><div class="thumb-articles"><img src="./resources/images/blog/imine-linkage-v3.svg"><hr2></div></a>  
                                     <article>
                                         <h2>C–H olefination using a TDG</h2>
-                                        <p>A novel transient directing group (TDG) has been developed that enables distal C–H olefination. </p>
+                                        <p>I present a summary of a novel transient directing group pioneered by the Maiti Group which enables distal C–H olefination. </p>
                                         <a href="#imine"><button class="button" style="vertical-align:middle"><div id="" class="btn">Read More </div></button></a>
                                     </article>
                             </div>
@@ -104,7 +115,43 @@
                     </div>
 
 
-                    <h4 class="titles"><a name="hts">The evolution of High-Throughput Experimentation in the pharmaceutical industry</a></h4>
+                    <h4 class="titles"><a name="first-python">Data Analysis and Visualisation with Python</a></h4>
+                        <h4 class="date" style="color:rgb(201, 30, 178)">10<sup2>th</sup2> June 2021</h4>
+
+                        <blockquote>
+                            Data will talk to you if you’re willing to listen.
+                            <cite>Jim Bergeson</cite>
+                            </blockquote>
+                        <p class="about-content" style="margin-bottom: 0rem">
+                            My first real-world use of Python was performing data analysis and visualisation of my monthly spending during the first year of my PhD. In particular, I used Pandas – a tool I find personally to be more powerful than Excel!<br><br>
+                            I started by exporting twelve months of financial data available from my bank and adding sub-tags to each transaction before importing the modified data into Pandas. By using Python and Pandas together, I created a function with a few lines of code which could manipulate the data in a specific way. <br><br>
+                            This function could search for a pre-defined sub-tag through the many hundreds of transactions and sum up the total per month to produce a simpler table of data. For example, it could instantly tabulate the monthly spend at Sainsburys (a supermarket in the UK) from a years’ worth of financial transactions. With this table in hand, I was then able to visualise this data as a bar chart by using another Python tool called Matplotlib. <br><br>
+                        </p>
+
+                        <div class="structure-list">
+                            <div class="images-mech">  
+                              <img class="chem-mech blog" src="./resources/images/blog/sainsburys_barchart.svg" alt="">
+                            </div>
+                        </div>
+                           
+                        <p class="about-content" style="margin-bottom: 0rem">
+                            Inquisitive about exploiting Matplotlib further, I was then able to generate a stacked bar chart of the spend of all supermarkets I visited per month. This provided me with a more in-depth visualisation of my monthly grocery spend.  <br><br>
+                        </p>
+
+                        <div class="structure-list">
+                            <div class="images-mech">  
+                              <img class="chem-mech blog" src="./resources/images/blog/stacked_grocery_barchart.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <p class="about-content">
+                            The use of data analysis tools in this side project illustrated how data science can make complex real-life data easier to understand. Visualising cleaned data from the unoptimized raw data helped me become more aware of my spending habits. It also gave me an insight into how I can manage my monthly outgoings more efficiently going forward.<br><br> My first  venture into Python and data analysis was now complete!
+                        </p>
+
+                        <p class="about-content"> <a href="#topline">>>> Back to top <<< </a> </p>
+                    
+                        <h4 class="titles"><a name="hts">The evolution of High-Throughput Experimentation in the pharmaceutical industry</a></h4>
                         <h4 class="date" style="color:rgb(201, 30, 178)">Reviewed on 6<sup2>th</sup2> April 2021</h4>
 
                         <blockquote>
@@ -121,6 +168,10 @@
                             <i>Org. Process Res. Dev.</i> 2019, 23 (6), pg. 1213–1242. DOI link: <a href="https://doi.org/10.1021/acs.oprd.9b00140" title="article DOI link" target="_blank">10.1021/acs.oprd.9b00140</a>
                         </p>
 
+                        <p class="about-content"> <a href="#topline">>>> Back to top <<< </a> </p>
+
+
+
                     <h4 class="titles"><a name="tertamine">Catalytic C(sp<sup2>3</sup2>)–H bond activation in tertiary alkylamines</a></h4>
                     <h4 class="date" style="color:rgb(201, 30, 178)">Reviewed on 26<sup2>th</sup2> March 2021</h4>
 
@@ -135,10 +186,10 @@
                             However, using an alkylamine could lead to unwanted β-hydride elimination to occur on the alkyl backbone. Gaunt and co-workers avoided this deleterious pathway by employing a mono-protected amino acid. It was rationalised that this ligand favoured the C–H activation pathway by distorting the co-planar geometry necessary for β-hydride elimination.<br><br>
                             Considering the substrate scope, a range of (hetero)aryl boronic acids could be used as the coupling partner. The scope of the amine component was also very broad with several tertiary amines tolerated including both acyclic and cyclic scaffolds. An example of this transformation is shown below. </p>
                             <div class="desktop images-mech">
-                                <img class="article-mech" src="./resources/images/articles/tert-amine-eqn-desktop.svg" alt="">
+                                <img class="article-mech" src="./resources/images/blog/tert-amine-eqn-desktop.svg" alt="">
                             </div>
                             <div class="mobile images-mech">
-                                <img class="article-mech" src="./resources/images/articles/tert-amine-eqn-mobile.svg" alt="">
+                                <img class="article-mech" src="./resources/images/blog/tert-amine-eqn-mobile.svg" alt="">
                             </div>  
                             
                         <p class="about-content">
@@ -146,6 +197,8 @@
                             In summary, a C–H arylation protocol using tertiary alkylamines has been developed. This method has the potential for modifiying tertiary alkylamine containing pharmaceutical compounds, of which there exists plenty. As a result, novel bioactive chemical space can be explored with little chemical effort. <br><br>
                             <i>Nat. Chem.</i> 2020, 12, pg. 76–81. DOI link: <a href="https://doi.org/10.1038/s41557-019-0393-8" title="article DOI link" target="_blank">10.1038/s41557-019-0393-8</a>
                         </p>
+
+                        <p class="about-content"> <a href="#topline">>>> Back to top <<< </a> </p>
 
                         <h4 class="titles"><a name="imine">Imine as a linchpin approach for <i>meta</i>-C–H functionalisation</a></h4>
                         <h4 class="date" style="color:rgb(201, 30, 178)">Reviewed on 20<sup2>th</sup2> March 2021</h4>
@@ -159,10 +212,10 @@
                             Maiti and co-workers have pioneered a novel TDG that achieves this. The TDG binds to the substrate reversibly and coordinates to a metal centre, bringing the metal near to the desired C–H bond. While several DG motifs were examined including nitriles and quinolines, it was found that pyrimidine-based templates were the most promising. An example of this transformation is shown below. </p>
                             
                             <div class="desktop images-mech">
-                                <img class="article-mech" src="./resources/images/articles/imine-eqn-desktop.svg" alt="">
+                                <img class="article-mech" src="./resources/images/blog/imine-eqn-desktop.svg" alt="">
                             </div>
                             <div class="mobile images-mech">
-                                <img class="article-mech" src="./resources/images/articles/imine-eqn-mobile.svg" alt="">
+                                <img class="article-mech" src="./resources/images/blog/imine-eqn-mobile.svg" alt="">
                             </div>  
                             
                         <p class="about-content">
@@ -172,8 +225,11 @@
                             <i>Nat. Commun.</i> 2021, 12, 1391. DOI link: <a href="https://doi.org/10.1038/s41467-021-21633-2" title="article DOI link" target="_blank">10.1038/s41467-021-21633-2</a>
                         </p>
 
+                        <p class="about-content"> <a href="#topline">>>> Back to top <<< </a> </p>
 
 
+
+                
                 
                 </div>
 
