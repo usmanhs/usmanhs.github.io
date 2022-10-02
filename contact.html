@@ -1,94 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#570c4d"/>
-        <meta name="Description" content="Contact page to get in touch with me about my research, videos or maths, chemistry GCSE, A-level tutoring in London.">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="./resources/css/reset.css">
-        <link rel="stylesheet" href="./resources/css/style.css">
-        <link rel="icon" href="./resources/images/favicon-flask-v2.ico" type="image/x-icon">
-        <title>Contact</title>
-    </head>
-
-    <body>
-        <!--Header-->
-        <header>
-            <div class="desktop" id="logo-desktop">
-                <a href="index.html"><i class="fa fa-flask" aria-hidden="true"></i></a>
-                <a href="index.html"><span class="light">usman</span><span class="bold">Shabbir</span></a>
-            </div>
-            <nav class="desktop" id="underlined">
-                <ul>
-                    <li><a href="about.html">About</a></li> 
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="blog.html">Blog</a></li>                    
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html" style="color:rgb(201, 30, 178)">Contact</a></li> 
-                </ul>   
-            </nav>
-
-            <div class="mobile" id="logo-mobile">
-                <a href="index.html"><span class="light">usman</span><span class="bold">Shabbir</span></a>
-            </div>
-            <nav class="mobile">
-                <ul>
-                    <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
-                    <li><a href="research.html"><i class="fa fa-flask" aria-hidden="true"></i></a></li>
-                    <li><a href="resources.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                    <li><a href="blog.html"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
-                    <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
-                    <li><a href="contact.html" style="color:rgb(201, 30, 178)"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                </ul>
-            </nav>    
-        </header>     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/chart-favicon.ico" type="image/x-icon">
+    <script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="informational"></script>
+    <title>BuildTrackGo | Contact</title>
+</head>
+<body>
+    
+    <header>
+        <div class="mobile-menu">
+            <a class="logo" href="/index.html"> 
+                <img class="logo-img" src="/images/logo-no-text.svg" alt=""> 
+                <div class="first-name">
+                    Build<span class="middle-name">Track</span>Go
+                </div>
+            </a>
+            <svg id="mobile-menu-bar" viewBox="0 0 100 80" width="25" height="25">
+                <rect width="100" height="10" rx="8"></rect>
+                <rect y="30" width="100" height="10" rx="8"></rect>
+                <rect y="60" width="100" height="10" rx="8"></rect>
+            </svg>
+        </div>
+        <navbar>
+            <ul class="nav-links" id="mobile-nav">
+                <li class="dropdown-menu-title"><a id="dropdown-toggle" ><span>Courses <img id="angle-icon" src="/images/icons/angle-down.svg" alt="angle-down"></i></span></a>
+                    <ul class="profile-dropdown" id="profile-dropdown">
+                        <li id="inactive"><a href="/index.html"><span>Finacial Tracker</span></a></li>
+                        <li id="inactive"><a href="/index.html"><span>Coming soon!</span></a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="/blog.html"><span>Blog</span></a></li>
+                <li class="active"><a href="/contact.html"><span>Contact</span></a></li>
+                <a href="https://buildtrackgo.teachable.com/sign_in" class="nav-buttons">Login</a>
+            </ul>
+        </navbar>
         
-        <main>
-            <!--Cover-->
-            <div class="cover" id="banner">
-                <div class="cover-title">
-                    <h1>Contact me</h1>
-                </div>
+    </header>
+
+    <main>
+        <div class="box1">
+            <img src="./images/undraw_profile_data.svg" alt="contact us">
+        </div>
+        <div class="box2 frontpage">
+            <h1>Contact us</h1>
+            <!-- <h1>Personal finances should be kept personal.</h1> -->
+            <p>Get in touch with us using the form below. </p>
+            <a href="#contact-form-start" class="enroll-button">Get in touch<span class="arrow">&nbsp;→</span></a>
+        </div>
+    </main>
+
+    <div class="cookie-container" fs-cc="banner">
+        <div class="cookie-info"><p>By using this website, you agree to the storing of cookies on your device to enhance site functionality and analyse site usage to give you the best online experience. View our <a href="/privacy-policy.html">Privacy Policy</a> for more information.</p></div>
+        <a  class="enroll-button cookie-btn" fs-cc="close">Got it!</a>
+    </div>
+
+    <section class="why-section blog-section"  id="contact-form-start">
+
+        <div class="blog-intro contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFQ3kPKiE1otYs0jVULnuh27IxUSWyhxLuOU_tvKKJ8vaEyQ/viewform?embedded=true" width="800" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+
+    <footer>
+
+
+        <div class="footer-container">
+            <div class="about">
+                <h2>Build Track Go</h2>
+                <ul>
+                    <li><a href="/index.html">Financial tracker course</a></li>
+                    <li><a href="https://buildtrackgo.teachable.com/sign_in">Login</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
+                    <li><a href="/privacy-policy.html">Privacy policy</a></li>
+                </ul>
             </div>
-            
-            <!--Intro-->
-            <div class="intro-title">
-                <h2>Let's talk</h2>
-            </div>
-            <hr style="width: 4.5rem">
-
-            <section id="intro-about">
-                <div id="aboutdiv">
-                    <h4 class="titles">Research discussion</h4>
-                    <p class="about-content">I would be happy to talk about my research and its impact to the chemistry field and beyond!</p> 
-
-                    <h4 class="titles">Retrosynthesis feedback</h4>
-                    <p class="about-content">Do get in touch with your comments and suggestions for my retrosynthesis project. All feedback is welcome!</p> 
-
-                    <h4 class="titles">GCSE/A-Level tutoring</h4>
-                    <p class="about-content">I am available for Chemistry and/or Mathematics tutoring in London.
-                         I recently was a tutor for first year chemistry students at UCL where I explained key topics that were
-                          difficult to understand, marked tutorials and gave students feedback on their written work.</p> 
+            <div class="connect">
+                <h2>Stay Informed</h2>
+                <ul>
+                    <li><a href="/newsletter-sign-up.html"class="newsletter-join-btn">Join our newsletter</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://www.instagram.com/buildtrackgo/"><img src="/images/icons/instagram.svg" alt="instagram icon"></i></a>
+                    <a href="https://twitter.com/buildtrackgo"><img src="/images/icons/twitter.svg" alt="twitter icon"></i></a> 
+                    <a href="https://www.youtube.com/channel/UCbLccua8anwYFEbvKKYRhHw"><img src="/images/icons/youtube-play.svg" alt="youtube-play icon"></i></a>
                 </div>
-                <div id="googleform">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScoXEhKTtdPbFDSblhNWSfT5elmQPhd0K2YtfA_5HRJoS-rKg/viewform?embedded=true" width="100%" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-            </section>
-               
-        </main>
 
-        <footer>
-            <div class="links">
-                <a class="youtube" href="https://www.youtube.com/channel/UCLBdeHFdjEsWN-DFyaN0guQ/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a class="twitter" href="https://twitter.com/UsmanHShabbir" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/in/usmanhshabbir/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
             </div>
-            <p class=desktop>&copy; 2022 Usman Shabbir</p>
-            <p class=mobile>&copy; 2022</p>
-        </footer>
-    </body>
+            <div class="recent-posts">
+                <h2>Top posts</h2>
+                <ul>
+                    <li><a href="/blog/budgeting/The-50-30-20-budget-rule-a-useful-budgeting-tool.html">The 50-30-20 budget rule...</a></li>
+                    <li><a href="/blog/budgeting/an-easy-recipe-for-saving-energy-in-the-kitchen.html">Recipe for saving energy in the kitchen...</a></li>
+                    <li><a href="/blog/budgeting/what-are-vampire-devices-and-do-they-add-to-my-energy-bill.html">Do 'vampire devices' contribute to my energy bill...</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+</body>
 </html>

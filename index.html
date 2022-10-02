@@ -1,208 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#570c4d"/>
-        <meta name="Description" content="Home page of my personal website.">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="./resources/css/reset.css">
-        <link rel="stylesheet" href="./resources/css/style.css">
-        <link rel="icon" href="./resources/images/favicon-flask-v2.ico" type="image/x-icon">
-        <title>Home</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap"
+    media="print"
+    onload="this.media='all'"
+    />
+    <noscript>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600&display=swap"
+        rel="stylesheet"
+        type="text/css"
+    />
+    </noscript>
+    <script async src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js" fs-cc-mode="informational"></script>
+    <meta name="description" content="Build your own financial tracker with Python. Track your finances. Go achieve your financial goals.">
+    <link rel="icon" href="/images/chart-favicon.ico" type="image/x-icon">
+    <title>BuildTrackGo</title>
+</head>
+<body>
+    <!-- <section class="offer">
 
-    <body>
-        <!--Header-->
-        <header>
-            <div class="desktop" id="logo-desktop">
-                <a href="index.html"><i class="fa fa-flask" aria-hidden="true"></i></a>
-                <a href="index.html"><span class="light">usman</span><span class="bold">Shabbir</span></a>
-            </div>
-            <nav class="desktop" id="underlined">
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="blog.html">Blog</a></li>                
-                    <li><a href="news.html">News</a></li>   
-                    <li><a href="contact.html">Contact</a></li> 
-                </ul>   
-            </nav>
+    </section> -->
 
-            <div class="mobile" id="logo-mobile">
-                <a href="index.html"><span class="light">usman</span><span class="bold">Shabbir</span></a>
-            </div>
-            <nav class="mobile">
-                <ul>
-                    <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
-                    <li><a href="research.html"><i class="fa fa-flask" aria-hidden="true"></i></a></li>
-                    <li><a href="resources.html"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                    <li><a href="blog.html"><i class="fa fa-comments" aria-hidden="true"></i></a></li>                    
-                    <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                </ul>
-            </nav>    
-
-        </header>
-
-        <main>
-            <!--Cover-->
-            <div class="cover" id="banner">
-                <div class="cover-title">
-                    <h1>Hi there. I'm Usman.</h1>
+    
+    <header>
+        <div class="mobile-menu">
+            <a class="logo" href="/index.html"> 
+                <img class="logo-img" src="/images/logo-no-text.svg" alt=""> 
+                <div class="first-name">
+                    Build<span class="middle-name">Track</span>Go
                 </div>
-            </div>    
+            </a>
+            <svg id="mobile-menu-bar" viewBox="0 0 100 80" width="25" height="25">
+                <rect width="100" height="10" rx="8"></rect>
+                <rect y="30" width="100" height="10" rx="8"></rect>
+                <rect y="60" width="100" height="10" rx="8"></rect>
+            </svg>
+        </div>
+        <navbar>
+            <ul class="nav-links" id="mobile-nav">
+                <li class="dropdown-menu-title active"><a href="/index.html" onclick="return false;" id="dropdown-toggle" ><span>Courses <img id="angle-icon" src="/images/icons/angle-down.svg" alt="angle-down"></i></span></a>
+                    <ul class="profile-dropdown" id="profile-dropdown">
+                        <li id="active"><a href="/index.html"><span>Finacial Tracker</span></a></li>
+                        <li id="inactive"><a href="/index.html"><span>Coming soon!</span></a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="/blog.html"><span>Blog</span></a></li>
+                <li class=""><a href="/contact.html"><span>Contact</span></a></li>
+                <a href="https://buildtrackgo.teachable.com/sign_in" class="nav-buttons">Login</a>
+            </ul>
+        </navbar>
+        
+    </header>
 
-            <!--Intro-->
-            <div class="intro-title">
-                    <h2>A little bit about myself</h2>
-            </div>
-            <hr style="width: 4.5rem">   
+    <index-main>
+    
+      
+        <div class="frontpage">
             
-            <section id="intro">
-                <div id="introdiv">
+            
+            <h1>Build your own Financial Tracker to</h1>
 
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">Who I am</h3>
-                        <div class="index-content">
-                            <a href="about.html">
-                                <div class="content-overlay"></div>
-                                        <img class="content-image" src="./resources/images/flask.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Researcher</h3>
-                                        <p>I am a postgraduate researcher in organic chemistry at UCL.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">What I do</h3>
-                        <div class="index-content">
-                            <a href="research.html">
-                                <div class="content-overlay"></div>
-                                    <img class="content-image" src="./resources/images/research.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Synthesis</h3>
-                                        <p>I am researching ways to join together chemical fragments with atomic-level precision.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">Educational resources</h3>
-                        <div class="index-content">
-                            <a href="resources.html">
-                                <div class="content-overlay"></div>
-                                    <img class="content-image" src="./resources/images/pencils.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Retrosynthesis</h3>
-                                        <p>I make step-by-step video solutions to various retrosynthesis problems.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">My blog</h3>
-                        <div class="index-content">
-                            <a href="blog.html">
-                                <div class="content-overlay"></div>
-                                    <img class="content-image" src="./resources/images/writing.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Thoughts</h3>
-                                        <p>A discussion on world events, selected academic literature and my side-projects.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">News</h3>
-                        <div class="index-content">
-                            <a href="news.html">
-                                <div class="content-overlay"></div>
-                                    <img class="content-image" src="./resources/images/news-pic.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Milestones</h3>
-                                        <p>My latest personal and academic updates are posted here.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="desktop parentdiv">
-                        <h3 class="titles">Let's talk</h3>
-                        <div class="index-content">
-                            <a href="contact.html">
-                                <div class="content-overlay"></div>
-                                    <img class="content-image" src="./resources/images/telephone.jpg" alt="">
-                                    <div class="content-details fade-in-top">
-                                        <h3>Contact</h3>
-                                        <p>Please do get in touch with any questions you may have.</p>
-                                    </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">Who I am</h3>
-                            <a href="about.html"><img src="./resources/images/flask.jpg" alt=""></a>
-                        <p class="content">I am a postgraduate researcher in organic chemistry at UCL.</p>
-                    </div>
-
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">What I do</h3>
-                        <a href="research.html"><img src="./resources/images/research.jpg" alt=""></a>
-                        <p class="content">I am researching ways to join together chemical fragments with atomic-level precision.</p>
-                    </div>
-
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">Educational resources</h3>
-                            <a href="resources.html"><img src="./resources/images/pencils.jpg" alt=""></a>
-                        <p class="content">I make step-by-step video solutions to various retrosynthesis problems.</p>
-                    </div>    
-
-
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">My blog</h3>
-                        <a href="blog.html"><img src="./resources/images/writing.jpg" alt=""></a>
-                        <p class="content">A discussion on world events, selected academic literature and my side-projects.</p>
-                    </div>    
-                    
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">News</h3>
-                        <a href="news.html"><img src="./resources/images/news-pic.jpg" alt=""></a>
-                        <p class="content">My latest personal and academic updates are posted here.</p>
-                    </div>      
-
-                    <div class="mobile parentdiv">
-                        <h3 class="titles">Let's talk</h3>
-                        <a href="contact.html"><img src="./resources/images/telephone.jpg" alt=""></a>
-                        <p class="content">Please do get in touch with any questions you may have.</p>              
-                    </div>    
-
-                </div>
-            </section>
-   
-        </main>
-
-        <footer>
-            <div class="links">
-                <a class="youtube" href="https://www.youtube.com/channel/UCLBdeHFdjEsWN-DFyaN0guQ/" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a class="twitter" href="https://twitter.com/UsmanHShabbir" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a class="linkedin" href="https://www.linkedin.com/in/usmanhshabbir/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <div class="animation-box">
+                <div class="first-line">enjoy peace of mind without any privacy worries.</div>
+                <div class="second-line">be more actively involved in achieving your goals.</div>
+                <div class="third-line">say goodbye to ad-intrusive apps and focus on saving.</div>
+                <div class="fourth-line">not be locked in to using third-party tracker apps. </div>
             </div>
-            <p class=desktop>&copy; 2022 Usman Shabbir</p>
-            <p class=mobile>&copy; 2022</p>
-        </footer>
+            <p class="free-guide"><b>FREE Guide:</b> Learn how to accurately categorise transactions and become more aware of your outgoings.</p>
+
+            <a  href="/e-guide-sign-up.html" class="enroll-button modal-btn">Get your Free Guide <span class="arrow">&nbsp;→</span> </a>
+
+            <div class="scroll-container">
+                <a href="#why"class="scroll-down">
+                    <div class="arrow">
+                        <span></span>  
+                        <span></span>  
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </index-main>
+
+    <div class="cookie-container" fs-cc="banner">
+        <div class="cookie-info"><p>By using this website, you agree to the storing of cookies on your device to enhance site functionality and analyse site usage to give you the best online experience. View our <a href="/privacy-policy.html">Privacy Policy</a> for more information.</p></div>
+        <a  class="enroll-button cookie-btn" fs-cc="close">Got it!</a>
+    </div>
+
+    <section class="why-section" id="why">
+
+        <div class="why-title">
+            <h1>Why build a financial tracker?<h1>
+        </div>
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_secure_files.svg" alt="privacy illustrated with a pad-locked file image">
+            </div>
+            <div class="box4 info-card">
+                <h2>Your financial data should be for <span> your eyes only</span></h2>
+                <p>Start building your financial tracker today and keep your financial records private.</p>
+                <!-- <a href="#get-started" class="enroll-button">Get started <span class="arrow">&nbsp;→</span></a> -->
+
+            </div>
+        </div>
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_powerful.svg" alt="powerful illustrated by a superwoman image">            
+            </div>
+            <div class="box4 info-card">
+                <h2><span>Take back control</span> of your finances</h2>
+                <p>Be more actively involved in managing your income and expenses with your own tracker.</p>
+                <!-- <a href="#get-started" class="enroll-button">Get started <span class="arrow">&nbsp;→</span></a> -->
+
+            </div>
+        </div>
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_vault.svg"  alt="security illustrated by a vault image">
+            </div>
+            <div class="box4 info-card">
+                <h2>Enjoy <span>peace of mind</span> without privacy concerns</h2>
+                <p>No need to use third-party apps that access all your sensitive transaction information.</p>
+                <!-- <a href="#get-started" class="enroll-button">Get started <span class="arrow">&nbsp;→</span></a> -->
+
+            </div>   
+        </div>
+        
+        <div class="why-container">
+            
+            <div class="box3">
+                <img src="./images/undraw_uncluttered.svg" style="width:75%;" alt="person looking at files with magnifying glass">
+            </div>
+            <div class="box4 info-card">
+                <h2>Get a <span>uncluttered view</span> of your spending trends</h2>
+                <p>Say goodbye to financial tracker apps that contain intrusive and irrelevant ads.</p>
+                <!-- <a href="#get-started" class="enroll-button">Get started <span class="arrow">&nbsp;→</span></a> -->
+
+            </div>   
+        </div>
+
+        <div class="why-container">
+            
+            <div class="box3">
+                <img src="./images/undraw_credit_card_2.svg"  alt="a credit card">
+            </div>
+            <div class="box4 info-card">
+                <h2>Get rid of <span>unnecesary subscription </span>costs</h2>
+                <p>No need to use apps that require a monthly fee to use. Build yours for a one-off fee.</p>
+                <!-- <a href="#get-started" class="enroll-button">Get started <span class="arrow">&nbsp;→</span></a> -->
+
+            </div>   
+        </div>
 
 
-    </body>
 
+
+        
+    </section>
+
+    <section class="achieve-section">
+        <div class="why-title">
+            <h1>Reach financial goals quicker</h1>
+            <p>After finishing our course, you can:</p>
+        </div>
+
+        <div class="achieve-container">
+            <div class="achieve-card">
+                <img src="./images/undraw_pie_chart.svg" alt=""  >
+                <p><b>Track and visualise</b> your expenses with easy to create graphs using Python.</p>
+            </div>
+            <div class="achieve-card">
+                <img src="./images/undraw_surveillance.svg" alt=""  >
+                <p><b>Improve self-control</b> by identifying your excessive spending patterns.</p>
+            </div>
+            <div class="achieve-card">
+                <img src="./images/undraw_visual_data.svg" alt="" >
+                <p><b>Monitor saving habits</b> by visualising the progress you have made over time.</p>
+            </div>
+        </div>
+
+        <a href="#get-started" class="enroll-button end-section">Get started<span class="arrow">&nbsp;→</span></a>
+
+    </section>
+    
+    <section class="video-section">
+
+        <div class="why-title">
+            <h1>Watch course overview</h1>
+        </div>
+
+        <video src="/images/course_overview.mp4" controls muted></video>
+    </section>
+
+    <section class="buy-section" id="get-started">
+
+        <div class="why-title">
+            <h1>Take charge of your finances</h1>
+            <p>by building your own tracker</p>
+        </div>
+
+        <div class="price-container">
+                <div class="price-card">
+                    <p>Best value</p>
+                    <h1>One-time payment.</h1>
+                    <h1>Instant access.</h1>
+                    <h2>£19.99 <span>£30</span> </h2> 
+                    <h3>excl. taxes</h3>
+                    <a href="https://buildtrackgo.teachable.com/purchase?product_id=4162174" class="enroll-button end-section buy-section" >Enrol now <span class="arrow">&nbsp;→</span></a>
+                </div>
+                <div class="price-card">
+                    <p>Spread the cost</p>
+                    <h1>3 monthly payments.</h1>
+                    <h1>Instant access.</h1>
+                    <h2>3 months &times; £6.99 </h2> 
+                    <h3>excl. taxes</h3>
+                    <a href="https://buildtrackgo.teachable.com/purchase?product_id=4162177" class="enroll-button end-section buy-section">Enrol now <span class="arrow">&nbsp;→</span></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="why-section">
+
+        <div class="why-title">
+            <h1>Get ready to improve your finances</h1>
+            <p>with our step-by-step course plan:</p>
+        </div>
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_spreadsheet.svg" alt="pa spreadsheet file"  loading="lazy">
+            </div>
+            <div class="box4 info-card">
+                <h2>Step 1: Organise</h2>
+                <p>Organising your financial transactions using a simple spreadsheet table.</p>
+            </div>
+        </div>
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_programmer.svg" alt="programmer"  loading="lazy">
+            </div>
+            <div class="box4 info-card">
+                <h2>Step 2: Download</h2>
+                <p>Get Python downloaded and running on your computer.</p>
+            </div>   
+
+        </div>
+
+
+        <div class="why-container">
+
+            <div class="box3">
+                <img src="./images/undraw_file_analysis.svg" alt="file analysis"  loading="lazy">            
+            </div>
+            <div class="box4 info-card">
+                <h2>Step 3: Code</h2>
+                <p>Learn how to perform data analysis on your transactions with Python.</p>
+            </div>
+        </div>
+
+
+        
+        <div class="why-container">
+            
+            <div class="box3">
+                <img src="./images/undraw_analytics.svg" alt="a person with some data metrics"  loading="lazy">
+            </div>
+            <div class="box4 info-card">
+                <h2>Step 4: Visualise</h2>
+                <p>Generate a range of visualisations tailored to budget categories of your choice.</p>
+            </div>   
+        </div>
+        
+        <div class="why-container">
+            
+            <div class="box3">
+                <img src="./images/undraw_stepping_up.svg" alt="a person stepping up on a bar chart"  loading="lazy">
+            </div>
+            <div class="box4 info-card">
+                <h2>Step 5: Track</h2>
+                <p>Easily track your expenses and gain insights into your spending habits over time.</p>
+            </div>   
+        </div>
+
+        <a href="#get-started" class="enroll-button end-section">Get started<span class="arrow">&nbsp;→</span></a>
+
+
+        
+    </section>
+
+    <section class="achieve-section">
+
+        <div class="why-title">
+            <h1>Start building today</h1>
+            <p>with our simple lesson plan:</p>
+        </div>
+
+        <div class="lesson-container">
+            <div class="lesson-card">
+                <div class="chapter-title">Chapter 1 - Getting started</div>
+                <div class="lesson-title-preview">
+                    <div class="tv-img">
+                        <img src="/images/icons/tv.svg">Welcome to the course (0:41)
+                    </div>
+                    <a href="https://buildtrackgo.teachable.com/courses/financial-tracker/lectures/40739355" target=”_blank”>Preview</a>
+                </div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Categorising your transactions (13:53)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Installing Python (7:00)</div>
+            </div>
+            <div class="lesson-card">
+                <div class="chapter-title">Chapter 2 - Visualising outgoings</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Introduction to coding with Python (10:03)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Creating your first visualisation (20:30)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Creating your first plotting function (14:09)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Advanced functions (31:44)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">More advanced functions (26:40)</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Real-life visualisation examples (9:35)</div>
+            </div>
+            <div class="lesson-card">
+                <div class="chapter-title">Chapter 3 - Adding new transactions</div>
+                <div class="lesson-title"><img src="/images/icons/tv.svg">Updating visualisations (4:18)</div>
+            </div>
+        </div>
+
+        <a href="#get-started" class="enroll-button end-section">Get started<span class="arrow">&nbsp;→</span></a>
+
+
+    </section>
+
+
+
+
+    <section class="about-section blog-section">
+
+        <div class="why-title">
+            <h1>The Blog</h1>
+            <p>Tips & tricks at your fingertips:</p>
+        </div>
+
+        <div class="blog-container">
+
+            <div class="blog-card">
+                <a href="/blog/budgeting/how-to-get-your-free-400-pound-energy-payment-from-UK-goverment.html"><h1 class="article-title">How to get your free £400 energy payment from the UK government</h1></a>
+                <a href="/blog/category/budgeting.html" class="category-tag">Budgeting</a>
+                <p class="date-author">29<sup>th</sup> July 2022 | Usman Shabbir</p>
+                <div class="blog-core">
+                        <a href="/blog/budgeting/how-to-get-your-free-400-pound-energy-payment-from-UK-goverment.html"><img src="/images/blog/thumbnails/undraw_gas_kettle.jpg" alt="" loading="lazy"></a>
+                    <div class="blog-text">
+                        <p>The UK government has promised £400 to all households in the UK to help with rising fuel bills. But how does it work...</p>  
+                        <a href="/blog/budgeting/how-to-get-your-free-400-pound-energy-payment-from-UK-goverment.html" class="blog-button">Full article <span class="arrow">&nbsp;→</span></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="blog-card">
+                <a href="/blog/budgeting/rising-prices-and-how-to-minimise-their-impact.html"><h1 class="article-title">The recent hike in prices and tips on how to minimise their impact</h1></a>
+                <a href="/blog/category/budgeting.html" class="category-tag">Budgeting</a>
+                
+                <p class="date-author">27<sup>th</sup> July 2022 | Usman Shabbir</p>
+                <div class="blog-core">
+                        <a href="/blog/budgeting/rising-prices-and-how-to-minimise-their-impact.html"><img src="/images/blog/thumbnails/unsplash_plant_money.jpg" alt="" loading="lazy"></a>
+                    <div class="blog-text">
+                        <p>Let’s go through the latest price hikes and share some tips to help minimise their impact on your finances....</p>  
+                        <a href="/blog/budgeting/rising-prices-and-how-to-minimise-their-impact.html" class="blog-button">Full article <span class="arrow">&nbsp;→</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="go-to-blog">
+            <a href="/blog.html" class="enroll-button">All blog posts<span class="arrow">&nbsp;→</span></a>
+        </div>
+
+
+    </section>
+
+    
+    <section class="faq-section">
+
+        <div class="why-title">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+
+        <div class="accordion">
+            <div class="faq-img">
+                <img src="./images/undraw_questions.svg" alt="man and woman holding a large question mark" class="accordion-img"  loading="lazy">
+            </div>
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How much time do I have to complete the course?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>There is no finish date! You have life-time access to the course material so take as much time as you need to complete the course.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Do I need previous coding experience?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>No previous coding experience is required to create this financial tracker. This beginner-friendly course guides you through each line of Python code and why it is used.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Is Python free to use?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Yes! Python is a free open source programming language and this course will provide a step-by-step walkthrough on how to get it installed onto your computer.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How hard is it to learn Python?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Python is considered one of the easiest programming languages for a beginner to learn. With the step-by-step code explanations in this course, building your financial tracker using Python will be easier than you may think!</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What type of visualisations will I create?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>In this course, you will learn how to visualise your expenses categories as both horizontal and vertical bar charts as well as pie charts and stacked bar charts.</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            How long is the course?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="plus-icon"><img src="/images/icons/plus.svg" alt="plus sign"></span>
+                            <span class="minus-icon"><img src="/images/icons/minus.svg" alt="minus sign"></span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>The course has over two hours of concise content. Each lecture contains detailed yet easy to follow walkthroughs that show you how to build your own financial tracker from scratch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="why-section">
+
+        <div class="why-title">
+            <h1>What are you waiting for?</h1>
+            <p>Start building a financial tracker that you can use forever.</p>
+            <a href="#get-started" class="enroll-button end-section" >Get started <span class="arrow">&nbsp;→</span></a>          
+        </div>
+
+    </section>
+
+    <footer>
+
+
+        <div class="footer-container">
+            <div class="about">
+                <h2>Build Track Go</h2>
+                <ul>
+                    <li><a href="/index.html">Financial tracker course</a></li>
+                    <li><a href="https://buildtrackgo.teachable.com/sign_in">Login</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
+                    <li><a href="/privacy-policy.html">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h2>Stay Informed</h2>
+                <ul>
+                    <li><a href="/newsletter-sign-up.html"class="newsletter-join-btn">Join our newsletter</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://www.instagram.com/buildtrackgo/"><img src="/images/icons/instagram.svg" alt="instagram icon"></i></a>
+                    <a href="https://twitter.com/buildtrackgo"><img src="/images/icons/twitter.svg" alt="twitter icon"></i></a> 
+                    <a href="https://www.youtube.com/channel/UCbLccua8anwYFEbvKKYRhHw"><img src="/images/icons/youtube-play.svg" alt="youtube-play icon"></i></a>
+                </div>
+            </div>
+            <div class="recent-posts">
+                <h2>Top posts</h2>
+                <ul>
+                    <li><a href="/blog/budgeting/rising-prices-and-how-to-minimise-their-impact.html">The latest price hikes and how to get around them...</a></li>
+                    <li><a href="/blog/budgeting/how-to-get-your-free-400-pound-energy-payment-from-UK-goverment.html">How to get the £400 energy discount...</a></li>
+                    <li><a href="/blog/budgeting/The-50-30-20-budget-rule-a-useful-budgeting-tool.html">How the 50-30-20 budget rule can help...</a></li>
+                </ul>
+            </div>
+        </div>    
+
+    </footer>
+
+
+<script src="/app.js"></script>
+
+
+</body>
 </html>
