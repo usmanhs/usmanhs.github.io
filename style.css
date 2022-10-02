@@ -334,6 +334,15 @@ index-main video {
     flex-direction: column;
 }
 
+.frontpage.home {
+    width: 100vw;
+}
+
+.enroll-button.modal-btn.home {
+    max-width: 300px;
+    font-size: 18px;
+}
+
 
 .frontpage.newsletter {
     align-items: flex-start;
@@ -366,11 +375,10 @@ index-main video {
 }
 
 .frontpage p{
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
     font-size: 22px;
     text-align: center;
-    /* font-weight: 400; */
 }
 
 .frontpage.newsletter p {
