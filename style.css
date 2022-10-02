@@ -340,7 +340,7 @@ index-main video {
 
 .enroll-button.modal-btn.home {
     max-width: 300px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -722,7 +722,7 @@ a.enroll-button, button.load-more {
     display: flex;
     line-height: 2.3rem;
     padding: 0.3rem 1.3rem;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 40px;
     font-weight: 500;
     border:none;
@@ -857,6 +857,7 @@ button.load-more:active, button.e-guide-sign-up:active {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 85px;
+    min-height: 450px;
 }
 .why-container:nth-child(even) .box4:last-child {
     order:-1;
@@ -963,7 +964,7 @@ button.load-more:active, button.e-guide-sign-up:active {
 .achieve-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 100px;
+    column-gap: 40px;
 }
 .achieve-card {
     display: flex;
@@ -973,13 +974,13 @@ button.load-more:active, button.e-guide-sign-up:active {
 }
 
 .achieve-card img {
-    width: 90%;
+    width: 60%;
     height:auto;
 }
 
 .achieve-card p {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
     min-height: 150px;
 }
@@ -2358,7 +2359,7 @@ body.links {
         font-size: 20px;
         text-align: center;
         margin-bottom: 20px;
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
     .about-section {
         padding: 50px 50px;
@@ -2413,7 +2414,7 @@ body.links {
 
     .achieve-container {
         grid-template-columns: 1fr;
-        row-gap: 30px;
+        row-gap: 60px;
     }
 
     .achieve-section .why-title p {
@@ -2422,7 +2423,7 @@ body.links {
     }
 
     .achieve-card p{
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 20px;
         min-height: 50px;
     }
