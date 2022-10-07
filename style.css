@@ -857,7 +857,7 @@ button.load-more:active, button.e-guide-sign-up:active {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
     row-gap: 85px;
-    min-height: 350px;
+    min-height: 400px;
 }
 .why-container:nth-child(even) .box4:last-child {
     order:-1;
