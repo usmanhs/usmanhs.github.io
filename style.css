@@ -998,7 +998,8 @@ button.load-more:active, button.e-guide-sign-up:active {
 }
 
 .video-section video {
-    width: 65vw;
+    /* width: 65vw; */
+    max-height: 500px;
 }
 
 /* FAQ accordion */
@@ -2389,6 +2390,7 @@ body.links {
     .video-section video {
         width: 100%;
         max-width: 100vw;
+        max-height: 500px;
     }
 
     .faq-section {
