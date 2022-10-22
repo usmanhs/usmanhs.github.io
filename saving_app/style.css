@@ -713,7 +713,12 @@ form.repeat-form {
     align-items: center;
 }
 
-
+.logo-container {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left:20px;
+}
 
 .home-logo {
     background-color: white;
@@ -721,10 +726,6 @@ form.repeat-form {
     border-radius: 100px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left:20px;
 }
 
 .home-logo img {
@@ -853,16 +854,14 @@ form.repeat-form {
         padding: 0px;
     }
 
-    .home-logo {
-        top: 8px;
+    .logo-container {
+        top: 4px;
         left:12px;
         padding: 5px;
-        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
     }
 
     .home-logo:hover {
         box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
-
     }
     
     .home-logo img {
