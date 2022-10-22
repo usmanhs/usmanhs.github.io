@@ -659,9 +659,98 @@ form.repeat-form {
 }
 
 
+/* Cookie banner */
+
+
+.cookie-container {
+    color: #fbfbfb;
+    position: fixed;
+    bottom:0px;
+    width: 100vw;
+    background: rgba(41, 41, 41, 0.95);
+    height: 100px;
+    z-index: 9000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px 20px 80px;
+    align-items: center;
+    column-gap: 20px;;
+}
+
+.cookie-info {
+    font-size: 16px;
+}
+
+.cookie-info a {
+    color: #b3c1ff;
+}
+
+.cookie-info a:hover {
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+.cookie-btn {
+    cursor: pointer;
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0rem;
+    display: flex;
+    line-height: 2.3rem;
+    padding: 0.3rem 1.3rem;
+    font-size: 20px;
+    border-radius: 40px;
+    font-weight: 500;
+    border:none;
+    text-decoration: none;
+    background: #51beac;
+    color: #fbfbfb;
+    transition: all 0.25s ease-in-out;
+    align-items: center;
+}
 
 
 
+
+@media (max-width: 850px) {
+    .cookie-container {
+        padding: 10px;
+        flex-direction: column;
+        height: fit-content;
+        text-align: center;
+        row-gap: 10px;
+    }
+    
+    .cookie-info {
+        font-size: 14px;
+    }
+
+    .enroll-button.cookie-btn {
+        padding: 5px 5px;
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 125px;
+        margin-bottom: 0px;
+    }
+
+
+    
+    .cookie-info a {
+        color: hsl(229, 100%, 85%);
+    }
+    
+    .cookie-info a:hover {
+        color: #fbfbfb;
+        text-decoration: none;
+    }
+    .cookie-btn {
+        cursor: pointer;
+        width: 200px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
 
 
 
@@ -752,6 +841,7 @@ form.repeat-form {
         flex-direction: column;
         padding: 4px 7px;
     }
+
 }
 
 
@@ -764,10 +854,6 @@ form.repeat-form {
     .tip {
         font-size: 18px;
     }
-
-
-
-
 
 
 
