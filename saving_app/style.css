@@ -682,6 +682,7 @@ form.repeat-form {
 
 .cookie-info {
     font-size: 16px;
+    font-weight: normal;
 }
 
 .cookie-info a {
@@ -711,6 +712,15 @@ form.repeat-form {
     color: #fbfbfb;
     transition: all 0.25s ease-in-out;
     align-items: center;
+}
+
+.cookie-btn:hover {
+    background: hsl(170, 46%, 35%);
+}
+
+.cookie-btn:active {
+    background: hsl(170, 46%, 23%);
+
 }
 
 .logo-container {
