@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="saving_app/style.css">
+    <title>Saving App | BuildTrackGo</title>
+</head>
+<body>
+
+    <div class="info">
+
+        <button id="onboarding-btn" class="info-btn" title="Information">
+            <span class="fa-stack" style="vertical-align: center;">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-info fa-stack-1x fa-inverse"></i>
+            </span>
+        </button>
+
+        
+    </div>
+    
+    <button id="difference-btn" class="calculator-btn" title="Calculator">
+        <span class="fa-stack" style="vertical-align: center;">
+            <i class="fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa-solid fa-calculator fa-stack-1x fa-inverse"></i>
+        </span>
+    </button>
+
+
+
+    <div class="onboarding-overlay"></div>
+
+    <div class="onboarding-container">
+        <div class="content">
+            <button id="skip-btn" class="close-popup">&times;</button>
+
+            <div class="steps">
+                <div class="step">
+                    <img src="/saving_app/images/undraw_app.svg" alt="">
+                    <h3>Savings simplified</h3>
+                    <p>Easily organise the ways you are saving money all in one place. Don't forget to add in the costs of avoided impulsive purchases.</p>
+                </div>
+                <div class="step">
+                    <img src="/saving_app/images/undraw_target.svg" alt="">
+                    <h3>Your app. Your goals.</h3>
+                    <p>Include a saving target to aim for and the app will work out the rest. Reached your target? No problem, update it within seconds!</p>
+                </div>
+                <div class="step">
+                    <img src="/saving_app/images/undraw_time.svg" alt="">
+                    <h3>Saving you time</h3>
+                    <p>For those savings that repeat, the app can calculate the accumulated savings with ease. No need to waste your valuable time repeating savings manually.</p>
+                </div>
+                <div class="step">
+                    <img src="/saving_app/images/undraw_knowledge.svg" alt="">
+                    <h3>More than a saving list</h3>
+                    <p>Stuck on how to save more? Want a breakdown of the latest financial news? The app is full of tips and tricks to help you improve your finances.</p>
+                </div>
+                <div class="step">
+                    <img src="/saving_app/images/undraw_security.svg" alt="">
+                    <h3>For your eyes only</h3>
+                    <p>Your saving data is stored on your device only. It's not stored anywhere on the internet which helps keeps it secure.</p>
+                </div>
+                <div class="step">
+                    <img src="/saving_app/images/undraw_cookies.svg" alt="">
+                    <h3>Delicious and useful</h3>
+                    <p>We use cookies to help keep your data stored on your device. Deleting these cookies can cause your inputted saving details to be lost.</p>
+                </div>
+            </div>
+            
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="onboarding-nav">
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popup-container hidden" id="difference-modal">
+        <div class="popup">
+            <button id="close-difference-popup-btn" class="close-popup">&times;</button>
+            <div class="target-input-container">
+                <form id="" class="repeat-form">
+                    <div class="repeat-input">                        
+                        <h3>Original cost</h3>
+                        <input type="number" name="" id="old-cost-input" class="difference-input"  step='0.01' required min="0" placeholder="£...">
+                    </div> 
+                    <div class="repeat-input">                        
+                        <h3>New cost</h3>
+                        <input type="number" name="" id="new-cost-input" class="difference-input"  step='0.01' required min="0" placeholder="£...">
+                    </div> 
+                    <div class="save-clear-repeat-btns">
+                        <button id="calculate-difference-btn" class="save-target-btn"><i class="fa-solid fa-calculator"></i></button>   
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <h1 class="title">My Saving List.</h1>
+
+
+        <section>
+            <form>
+                <input stype="text" name="" id="text-input" class="text-input" placeholder="Saving info..." required autocomplete="off">
+                <input type="number" name="" id="cost-input" class="cost-input"  step='0.01' required  placeholder="£...">
+                <button id="add-btn" class="add-btn"><i class="fa fa-plus" aria-hidden="true" title="Add saving"></i></button>
+                <button id="add-target-btn" class="add-target-btn"><i class="fa fa-trophy" aria-hidden="true" title="Add target"></i></button>
+            </form> 
+            <ul id="saving-list" class="saving-list"></ul>
+            <div class="total-container">
+                <h3 id="saving-result"> </h3>               
+            </div>
+
+        </section>
+
+
+        <div class="popup-container hidden" id="target-modal">
+            <div class="popup">
+                <button id="close-target-popup-btn" class="close-popup">&times;</button>
+                <div class="target-input-container">
+                    <h3>Your target </h3>
+                    <form>
+                        <input type="number" name="" id="target-input" class="target-input"  step='0.01' min="0" required placeholder="£...">
+                        <button id="save-target-btn" class="save-target-btn" title="Save target"><i class="fa fa-floppy-disk"></i></button>    
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container hidden" id="repeat-modal">
+            <div class="popup">
+                <button id="close-repeat-popup-btn" class="close-popup">&times;</button>
+                <div class="target-input-container">
+                    <form id="repeat-form" class="repeat-form">
+                        <div class="repeat-input">                        
+                            <h3>Start date</h3>
+                            <input type="date" name="" id="date-input" class="target-input date-input" min="2020-01-01" max="2030-01-01" required placeholder="...">
+                        </div> 
+                        <div class="repeat-input">
+                            <h3>Repeat every</h3>
+                            <input type="number" name="" id="day-input" class="target-input"  step='1' min=0 required placeholder="..."> 
+                            <h3>day(s)</h3>
+                        </div>
+                        <div class="repeat-input">                        
+                            <h3>End after</h3>
+                            <input type="number" name="" id="occurence-input" class="target-input"  step='1'min=0 required placeholder="...">
+                            <h3>occurence(s)</h3>
+                        </div> 
+                        <div class="save-clear-repeat-btns">
+                            <button id="save-repeat-btn" class="save-target-btn" title="Activate repeat"><i class="fa fa-floppy-disk"></i></i></button>   
+                            <button id="clear-repeat-btn" class="clear-repeat-btn" title="Delete repeat"><i class="fa fa-eraser"></i></i></button>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </main>
+
+    <div class="tips-container">
+        <div class="heading">
+            <h2>Shuffle for </h2>
+            <button  id="shuffle-btn" class="shuffle-btn"><i class="fa-solid fa-shuffle"></i></button>
+            <h2>news & tips</h2>
+        </div>
+        <div class="tips-titles" id="tips">
+            <div class="tip hidden"><a href="https://www.instagram.com/p/CjUy4Q2sAH9/" target="_blank">Breakdown of the four winter payments from UK gov</a><span>NEW</span></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/CjGtZdKsfK5/" target="_blank">What the drop in the pound against the dollar means for you</a></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/Ci7YNDyswxu/" target="_blank">The UK Chancellor's mini-budget explained</a></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/CiXWTTfsLwU/" target="_blank">What the new energy price cap means for you</a></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/Chhcz9csh5v/" target="_blank">How to cut your mobile bills by haggling</a></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/ChPagvysBSN/" target="_blank">Asda's new loyalty scheme for grocery shopping</a></div>
+            <div class="tip hidden"><a href="https://www.instagram.com/p/Cg5AprosdoD/" target="_blank">What The Bank of England's new interest rise means for you</a></div>
+        </div>
+    </div>
+
+    <div class="newsletter-container">
+        <h4><a href="https://buildtrackgo.com/newsletter-sign-up.html" target="_blank">Join our free newsletter</a> to never miss our money saving tips & more.</h4>
+    </div>
+
+    <div class="created-by" >
+        <h4>Created by BuildTrackGo <i class="fa-solid fa-envelope"></i> </h5>
+        <p>We would love to hear your feedback about our app! Let us know <a href="https://buildtrackgo.com/contact.html" target="_blank"> via our website.</a> </p>
+    </div>
+
+    
+    <canvas id="my-canvas"></canvas>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.3/build/global/luxon.min.js" integrity="sha256-RH4TKnKcKyde0s2jc5BW3pXZl/5annY3fcZI9VrV5WQ=" crossorigin="anonymous"></script>
+    <script src="/saving_app/confetti.js"></script>
+    <script src="/saving_app/app.js"></script>
+    
+</body>
+</html>

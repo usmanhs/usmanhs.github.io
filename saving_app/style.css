@@ -1,0 +1,782 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    font-family: 'Poppins', san-serif;
+    background: linear-gradient(90deg, #d1d9ee 0%, #d9e7ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-height: 100vh;
+    position: relative;
+}
+
+
+
+.info-input-container {
+    overflow-y:auto;
+    max-height:80vh;
+}
+.info-input-container h4 {
+    margin-bottom: 5px;
+}
+
+.info-input-container h3 {
+    font-size: 22px;
+}
+
+
+h1.title {
+    padding: 0px 10px;
+    text-align: center;
+    color: rgb(0, 2, 105);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.saving-list{
+    overflow-y: auto;
+    /* height: 40vh; */
+    max-height: 40vh;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+section {
+    width: 50%;
+    min-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+.saving-el {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcfcfc;
+    margin: 5px 0;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.saving-el li {
+    overflow-x: scroll;
+    flex: 1;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-btn, .add-btn, .save-target-btn, .repeat-btn, .shuffle-btn, .info-btn, .clear-repeat-btn, .calculator-btn {
+    color: white;
+    border: none;
+    background: rgb(1, 0, 85);
+    font-size:20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.info-btn, .calculator-btn {
+    padding: 10px;
+    font-size: 20px;
+    color: cadetblue;
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    right:20px;
+    color: cadetblue;
+    background: transparent;
+}
+
+.calculator-btn {
+    right: 80px;
+    color: rgb(1, 0, 85);
+}
+.calculator-btn i.fa-calculator {
+    color: gold;
+}
+
+.info-btn:hover {
+    color: hsl(182, 25%, 35%);
+}
+
+.calculator-btn:hover {
+    color: gold;
+}
+
+.calculator-btn:hover i.fa-calculator {
+    color: rgb(1, 0, 85);
+}
+
+
+.popup .info-section {
+    margin: 7px 0px;
+}
+
+.clear-repeat-btn {
+    background-color: rgb(155, 2, 2);
+}
+
+.clear-repeat-btn:hover {
+    background-color: rgb(95, 0, 0);
+}
+
+.repeat-form .save-clear-repeat-btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-clear-repeat-btns .save-target-btn {
+    width: 100%;
+}
+
+.save-clear-repeat-btns .clear-repeat-btn {
+    width: 20%;
+}
+
+
+
+
+.add-btn.info-menu, .add-target-btn.info-menu, .repeat-btn.info-menu{
+    padding: 7px;
+    font-size: 15px;
+}
+
+.repeat-btn {
+    margin-right: 5px;
+    color: rgb(179, 179, 179);
+    background: transparent;
+}
+
+.repeat-btn:hover {
+    color: rgb(1, 0, 85);
+}
+
+.repeat-btn .fa-rotate.active {
+    color: rgb(73, 196, 73);
+}
+
+
+.repeat-btn.info-menu {
+    color: white;
+    background: cadetblue;
+}
+
+
+.delete-btn:hover {
+    background: rgb(211, 0, 0);
+}
+
+i.fa-rotate, i.fa-floppy-disk {
+    pointer-events: none;
+}
+
+
+.add-btn, .save-target-btn {
+    background-color: cadetblue;
+}
+
+.add-btn:hover, .save-target-btn:hover , .repeat-btn.info-menu:hover{
+    background-color: hsl(182, 25%, 35%);
+}
+
+
+
+.add-btn i, .repeat-btn i {
+    transform: rotate(0deg);
+    transition: all 0.4s ease;
+    
+}
+.add-btn:hover i, .repeat-btn:hover i {
+    transform: rotate(180deg);
+}
+
+
+.total-container h3 {
+    color: rgb(0, 2, 105);
+    margin-top:15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    max-width: 500px;
+}
+
+.total-container span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+form .text-input, form .cost-input {
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 17px;
+    margin: 0px;
+}
+
+form .difference-input {
+    border: 1px solid rgb(1, 0, 85);
+    padding: 8px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 17px;
+    margin: 0px;
+
+}
+
+form input.difference-input {
+    width: 100px;
+}
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3px;
+}
+
+form .text-input {
+    flex: 1;
+}
+
+form .cost-input {
+    width: 20%;
+}
+
+.add-target-btn{
+    color: gold;
+    border: black 2px solid;
+    padding: 3px;
+    background-color: rgb(1, 0, 85);
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.add-target-btn:hover {
+    background-color: gold;
+    color: rgb(1, 0, 85);
+}
+
+.popup-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    left:0;
+    right:0;
+    bottom: 0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position:relative;
+}
+
+.close-popup {
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    position: absolute;
+    top: -15px;
+    right: -37px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    opacity:0;
+    pointer-events: none;
+}
+
+.close-popup:hover {
+    color: rgb(219, 37, 37);
+}
+
+.target-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+form .target-input {
+    padding: 5px;
+    font-family: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100px;
+}
+
+.target-input.date-input {
+    width: fit-content;
+}
+
+#my-canvas {
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    top:0;
+    pointer-events: none;
+}
+
+
+form.repeat-form {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.repeat-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.repeat-input input {
+    width: 50px;
+}
+
+.tips-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 10px;
+    color: #000269;
+}
+
+.tips-container .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    margin-bottom: 10px;
+}
+
+.tips-titles {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.tips-titles span {
+    position: relative;
+    top:  0px;
+    right: -5px;
+    background-color: #51beac;
+    color:white;
+    padding: 3px 4px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+.tip {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.tip a:hover, .newsletter-container a:hover {
+    text-decoration: none;
+    color: rgb(17, 70, 71);
+}
+
+.tip a, .newsletter-container a {
+    text-decoration: underline;
+    color:rgb(26, 83, 85)
+}
+
+
+.tips-container .shuffle-btn  {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+
+.shuffle-btn:hover {
+    background-color: hsl(182, 25%, 35%);
+}
+.shuffle-btn i {
+    transform: scale(1) rotate(0deg);
+    transition: all 0.4s ease;
+}
+
+.shuffle-btn:hover i   {
+    transform:  scale(1) rotate(360deg);
+}
+
+.shuffle-btn:active  {
+    background: rgb(0, 2, 105)
+}
+
+
+.created-by {
+    position:absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.created-by a {
+    color: rgb(188, 230, 231);
+}
+
+
+.newsletter-container {
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+.newsletter-container h4, .created-by h4 {
+    color: #000269;
+    font-size: 15px;
+}
+
+.newsletter-container h4 {
+    text-align: center;
+}
+
+
+
+.created-by p {
+    position: absolute;
+    color: #fbfbfb;
+    background:rgba(20, 23, 26, 0.8);
+    height: fit-content;
+    width: 206px;
+    bottom: 0;
+    left:0;
+    top: 0px;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.created-by:hover p {
+    /* transform: translate(0%, 100%); */
+    transform: translateY(20px);
+    opacity: 1;
+    pointer-events:all;
+}
+
+.arrows {
+    z-index: 1;
+    padding: 0px 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows button {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #000269;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.arrows button:hover {
+    color: cadetblue;
+}
+
+
+.onboarding-nav {
+    display: flex;
+    gap: 3px;
+}
+
+
+/* help carousel */
+
+:root {
+    --stepsCount:6;
+}
+
+
+.onboarding-container img {
+    height: 250px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0px 20px;
+}
+
+.onboarding-overlay {
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.onboarding-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.onboarding-container {
+    z-index: 999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 25px));
+    box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.onboarding-container.active {
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.onboarding-container .content {
+    background: white;
+    /* width: 300px; */
+    padding-top: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.onboarding-container .steps {
+    display: flex; 
+    width: calc(100% * var(--stepsCount));
+    transition: all 0.3s ease;
+}
+
+.onboarding-container .step, .onboarding-container .content {
+    width: 500px;
+}
+
+.onboarding-container h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 30px;
+    /* width: 400px; */
+}
+
+.onboarding-container p {
+    padding: 10px 0px;
+    line-height: 1.3;
+    padding: 0px 30px;
+    /* width: 400px; */
+    font-size: 15px;
+}
+
+
+.onboarding-nav button {
+    width: 100%;
+    background-color: rgb(0, 2, 105);
+    padding: 18px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border:none;
+    color: whitesmoke;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+
+.next-btn.finish {
+    background-color: cadetblue;
+}
+
+/* .skip-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(3, 3, 59);
+} */
+
+.onboarding-container .dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #dbdbdb;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.dots {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    /* width: 50%;
+    margin: 0 auto; */
+}
+
+
+
+.onboarding-container .dot.active {
+    background: #222;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 620px)   {
+
+    .onboarding-container .step, .onboarding-container .content {
+        width: 90vw;
+    }
+
+    .onboarding-container img  {
+        height: 200px;
+        padding: 0px 5px;
+    }
+
+    h1.title {
+        font-size: 32px;
+    }
+
+    .total-container h3 {
+        font-size: 18px;
+    }
+
+    .total-container span {
+        font-size: 24px;
+    }
+
+    section {
+        min-width: unset;
+        width: 90%;
+    }
+
+    form .text-input, form .cost-input {
+        font-size: 16px;
+    }
+
+    .saving-el {
+        font-size: 16px;
+        align-items: stretch;
+    }
+
+
+    form .cost-input {
+        width: 25%;
+        margin: 0 auto;
+        min-width: 50px;
+    }
+
+    form .text-input {
+        width: 10%;
+    }
+
+    .close-popup {
+        width: fit-content;
+        color: white;
+        font-size: 40px;
+        top: -40px;
+        right: 2px;
+        cursor: pointer;
+    }
+
+    .popup {
+        margin: 0px 10px;
+    }
+
+    /* .tip a {
+        text-decoration: underline;
+        color:rgb(26, 83, 85)
+    } */
+
+    .info-btn, .calculator-btn {
+        font-size: 18px;
+        top: 8px;
+        right:4px;
+        padding: 0px;
+    }
+
+    .calculator-btn {
+        right: 50px;
+    }
+
+
+
+}
+
+@media (max-width:450px) {
+    .saving-el li {
+        display: flex;
+        flex-direction: column;
+        padding: 4px 7px;
+    }
+}
+
+
+@media (max-width: 380px)   {
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .tip {
+        font-size: 18px;
+    }
+
+
+
+
+
+
+
+    form .text-input {
+        width: 10%;
+    }
+
+    form .cost-input {
+        margin: 0 auto;
+    }
+
+}
