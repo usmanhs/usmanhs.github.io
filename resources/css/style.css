@@ -330,12 +330,18 @@ p.content {
 }
 
 p.about-content {
-  color: black;
+  color: rgb(27, 1, 1);
   font-size: 1rem;
   line-height: 1.5rem;
   margin: auto;
   margin-bottom: 1.5rem;
 }
+
+
+/* p.about-content span {
+  margin-top: 00px;
+
+} */
 
 h3.titles {
   font-weight: bold;
@@ -368,6 +374,22 @@ i {
   font-style: italic;
 }
 
+/* blog text for new articles */
+.core-text p {
+  color: rgb(27, 1, 1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.core-text h6 {
+  color: rgb(27, 1, 1);
+  font-size: 1rem;
+  margin-bottom: 4px;
+  line-height: 1.5rem;
+  font-weight: bolder;
+}
 
 /* Button for Index */
 
